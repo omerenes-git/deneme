@@ -452,7 +452,7 @@
     const BOM = '﻿';
     const header = ['Hasta Adı Soyadı', 'Seans Tarihi', 'Sol Adım (cm)', 'Sağ Adım (cm)', 'Paretik Taraf', 'SLSI (%)'].join(SEP);
     const rows = records.map(r => [
-      `"${r.name.replace(/"/g, '""')}"`,
+      `"${r.name.replace(/"/g, '""')}"`  ,
       formatDate(r.date),
       r.left.toString().replace('.', ','),
       r.right.toString().replace('.', ','),
